@@ -1,0 +1,39 @@
+<div>
+  <form #form='ngForm' (submit)="onSubmit(form)">
+    <input
+      type="text"
+      ngModel
+      class="input"
+      name="name"
+      placeholder="name"
+    /><br />
+    <input
+      type="text"
+      ngModel
+      class="input"
+      name="email"
+      placeholder="email"
+    /><br />
+    <input
+      type="text"
+      ngModel
+      class="input"
+      name="number"
+      placeholder="number"
+    /><br />
+    <input
+      type="password"
+      ngModel
+      class="input"
+      name="password"
+      placeholder="password"
+    /><br />
+    <input
+      type="password"
+      class="input"
+      name="cpassword"
+      placeholder="conform password"
+    /><br />
+    <button type="submit" class="btn">Sign up</button>
+  </form>
+</div>

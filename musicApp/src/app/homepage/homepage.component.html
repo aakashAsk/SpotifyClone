@@ -1,0 +1,27 @@
+<div class="main-grid">
+  <div class="meanScapP-hpc" *ngIf="hindiSongList?.length != 0">
+    <div class="meanScapP-hpc-m-h">
+      <h1>Popular Hindi Songs</h1>
+    </div>
+    <div class="meanScapP-hpc-m">
+      <div class="" *ngFor="let song of hindiSongList">
+        <div class="meanScapP-hpc-g">
+          <app-music-card [songList]="song"></app-music-card>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="meanScapP-hpc" *ngIf="englishSongList?.length != 0">
+    <div class="meanScapP-hpc-m-h">
+      <h1>Popular English Songs</h1>
+    </div>
+    <div class="meanScapP-hpc-m">
+      <div class="" *ngFor="let song of englishSongList">
+        <div class="meanScapP-hpc-g">
+          <app-music-card [songList]="song"></app-music-card>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

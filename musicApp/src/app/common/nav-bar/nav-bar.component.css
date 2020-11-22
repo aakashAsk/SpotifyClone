@@ -1,0 +1,89 @@
+.navbar {
+  justify-content: flex-start;
+  height: 100%;
+  padding: 0 32px;
+}
+.icon {
+  width: 32px;
+  height: 32px;
+  background: #050505;
+  border-radius: 50%;
+  margin-right: 16px;
+}
+.icon > i {
+  color: #fff;
+}
+.user-icon {
+  margin-left: auto;
+  background-color: #050505;
+  border-radius: 30px;
+  padding: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.user-icon:hover .user-btn {
+  border: none;
+}
+.user-icon:hover {
+  background-color: #282828;
+}
+
+.user-icon > span {
+  color: #fff;
+  margin: 0 8px;
+}
+.btn {
+  background: transparent;
+  border: none;
+  display: flex;
+}
+.user-btn {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  border: 2.2px solid #050505;
+  background: #333;
+  cursor: pointer;
+  transition: 0.2s;
+  outline: none;
+}
+.user-btn:hover {
+  border: none;
+}
+.bg-color{
+  background: #282828;
+}
+.border{
+  border: none;
+}
+.nav-menu {
+  position: absolute;
+    width: 190px;
+    background: #fff;
+    padding: 3px;
+    top: 40px;
+    right: 0px;
+    background-color: #282828;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.7);
+    border-radius: 4px;
+    z-index: 100;
+}
+.nav-menu > ul {
+  list-style: none;
+}
+.nav-menu > ul > li {
+  color: #ffffffb3;
+    height: 38px;
+    display: flex;
+  cursor: pointer;
+    align-items: center;
+    margin: 4px;
+    padding: 8px;
+    border-radius: 4px;
+}
+.nav-menu > ul > li:hover{
+  background: #3e3e3e;
+  color:#fff;
+}

@@ -1,0 +1,130 @@
+.meanScapP-mcc-m {
+  width: 100%;
+  background-color: #181818;
+  padding: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  height: 100%;
+  transition: 0.5s;
+  position: relative;
+}
+.meanScapP-mcc-m:hover {
+  background-color: #282828;
+}
+
+.play-button:hover {
+  transform: scale(1.06);
+}
+.meanScapP-mcc-m-img > img {
+  border-radius: 2px;
+  width: 100%;
+  border-radius: 2px;
+  height: 150px;
+  image-rendering: pixelated;
+}
+.meanScapP-mcc-m-h > h2,
+.meanScapP-mcc-m-h > h3 {
+  color: #fff;
+}
+
+.meanScapP-mcc-m-h > h2 {
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  line-height: 24px;
+  margin: 8px 0;
+}
+.meanScapP-mcc-m-h > h3 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  margin-bottom: 8px;
+}
+.play-icon {
+  transition: all 0.3s ease;
+  position: relative;
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.3);
+  z-index: 2;
+}
+.show {
+  display: initial;
+  animation: up 0.155s linear;
+}
+.play-button {
+  background: #1db954;
+  border: none;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  right: 10px;
+  position: absolute;
+  top: -55px;
+  transition: transform 33ms cubic-bezier(0.3, 0, 0, 1),
+    -webkit-transform 33ms cubic-bezier(0.3, 0, 0, 1);
+  outline: none;
+}
+.button {
+  display: none;
+}
+.meanScapP-mcc-m:hover .button {
+  display: initial;
+  animation: up 0.155s linear;
+}
+
+.hide {
+  display: none;
+}
+/* .meanScapP-mcc-m:not(:hover) .play-button {
+  animation: down 0.155s linear;
+} */
+@keyframes up {
+  from {
+    top: -20px;
+    opacity: 0;
+  }
+  to {
+    top: -55px;
+    opacity: 1;
+  }
+}
+
+@keyframes down {
+  from {
+    top: -55px;
+    opacity: 1;
+  }
+  to {
+    top: -10px;
+    opacity: 0;
+    display: none;
+  }
+}
+
+.text {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  text-transform: capitalize;
+}
+a {
+  text-decoration: none;
+}
+a:visited,
+a:active {
+  color: #fff;
+}
+.po-abs {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+  content: "";
+}

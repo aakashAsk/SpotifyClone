@@ -1,0 +1,50 @@
+<div class="meanScapP-mcc-m">
+  <div class="meanScapP-mcc-m-img" [class]="song?._id">
+    <img [src]="song?.img" />
+    <div class="play-icon">
+      <button
+        class="play-button"
+        (click)="play(song?._id)"
+        [ngClass]="{
+          button: !(currentSongId === song?._id),
+          '': currentSongId === song?._id
+        }"
+      >
+        <!-- play -->
+        <svg
+          height="16"
+          *ngIf="!(currentSongId === song?._id && isPlay)"
+          color="#fff"
+          style="margin: 0"
+          role="img"
+          width="16"
+          viewBox="0 0 24 24"
+          aria-hidden="true"
+        >
+          <polygon
+            points="21.57 12 5.98 3 5.98 21 21.57 12"
+            fill="currentColor"
+          ></polygon>
+        </svg>
+        <!-- pause -->
+        <svg
+          height="16"
+          *ngIf="currentSongId === song?._id && isPlay"
+          color="#fff"
+          role="img"
+          width="16"
+          viewBox="0 0 24 24"
+          aria-hidden="true"
+        >
+          <rect x="5" y="3" width="4" height="18" fill="currentColor"></rect>
+          <rect x="15" y="3" width="4" height="18" fill="currentColor"></rect>
+        </svg>
+      </button>
+    </div>
+  </div>
+  <div class="meanScapP-mcc-m-h">
+    <h2 class="text">{{ song?.title }}({{ song?.collectionName }})</h2>
+    <h3 class="text">{{ song?.artistName }}</h3>
+  </div>
+  <div class="po-abs" (click)="navigate(song?.collectionName)"></div>
+</div>

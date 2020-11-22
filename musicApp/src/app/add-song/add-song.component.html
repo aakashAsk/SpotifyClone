@@ -1,0 +1,42 @@
+<main style="background-color: #fff">
+  <form #form="ngForm" (submit)="onSubmit(form)">
+    <input
+      type="text"
+      name="title"
+      ngModel
+      class="txt1"
+      placeholder="Enter Title"
+    /><br />
+    <input
+      type="text"
+      name="artistName"
+      ngModel
+      class="txt1"
+      placeholder="Enter Artist Name"
+    /><br />
+    <input
+      type="text"
+      name="lan"
+      ngModel
+      class="txt1"
+      placeholder="Enter Langauge"
+    /><br />
+    <input
+      type="text"
+      name="collection"
+      ngModel
+      class="txt1"
+      placeholder="Enter collection name"
+    /><br />
+    <h2>Thumbnail</h2>
+    <input
+      type="file"
+      name="thumbnail"
+      (change)="img($event)"
+      class="txt"
+    /><br />
+    <h2>song</h2>
+    <input type="file" name="song" (change)="song($event)" class="txt" /><br />
+    <button type="submit" class="btn">Add</button>
+  </form>
+</main>

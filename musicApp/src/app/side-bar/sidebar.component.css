@@ -1,0 +1,87 @@
+.meanScapP-sbc{
+  height: 87vh;
+  background-color: #0404042a;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+.meanScapP-sbc-1{
+  margin-top: 25px;
+  cursor: pointer;
+}
+.meanScapP-sbc-1-svg{
+  height: 40px;
+  margin-right: 10px;
+}
+.meanScapP-sbc-2-svg{
+  height: 22px;
+  margin-right: 16px;
+}
+.meanScapP-sbc-1-p{
+  color:#fff;
+  font-size: 23px;
+  font-weight: 600;
+}
+
+.meanScapP-sbc-2{
+  width: 100%;
+}
+.meanScapP-sbc-2-ul{
+  list-style: none;
+  margin-top: 16px;
+}
+.meanScapP-sbc-2-ul > li{
+  padding: 9px 16px;
+    margin: 0px 8px;
+    display: flex;
+    align-items: center;
+    color:#b3b3b3;
+    cursor: pointer;
+}
+.meanScapP-sbc-2-ul > li:hover{
+  color:#fff;
+}
+.meanScapP-sbc-2-ul > li > span{
+  font-size: 14px;
+  font-weight: 500;  
+}
+
+/* playlist */
+.meanScapP-sbc-3{
+  width: 100%;
+  margin-top: 24px;
+}
+.meanScapP-sbc-3-h{
+
+}
+.meanScapP-sbc-3-h > p{
+  color:#b3b3b3;
+  margin: 0px 24px 12px 24px;
+  font-size: 12px;
+  font-weight: 700;
+}
+.meanScapP-sbc-4{
+  width: 100%;
+}
+.meanScapP-sbc-4-cpl{
+  padding: 5px 24px;
+  display: flex;
+  justify-content: flex-start;
+}
+.meanScapP-sbc-4-cpl-btn{
+  width: 30px;
+    height: 30px;
+    color: #000;
+    background-color: #b3b3b3;
+    font-size: 30px;
+    font-weight: bolder;
+    margin-right: 16px;
+}
+.meanScapP-sbc-4-cpl > p{
+  color:#b3b3b3;
+}
+.horizontal-line{
+  background-color: #282828;
+  border: none;
+  height: 1px;
+  margin: 20px 16px;
+}
